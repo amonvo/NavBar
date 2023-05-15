@@ -1,0 +1,64 @@
+* {
+  margin: 0px;  padding: 0px;
+}
+
+.navigace, .navigace ul {
+  list-style-type: none;
+}
+
+.navigace ul {
+  display: none;
+}
+
+.navigace>li {
+  float:left;
+  background-color: black;
+  color: white;
+  width: 25%; height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.navigace>li:first-child {
+  color: yellow;
+}
+
+.navigace>li:hover {
+  background-color: #B5C6FE;
+  color: black;
+}
+
+.navigace>li:hover>ul {
+  display: block;
+}
+
+.navigace>li:hover ul li {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.navigace>li:hover ul li:nth-child(odd) {
+  background-color: #333;
+  color: white;
+}
+.navigace>li:hover ul li:nth-child(even) {
+  background-color: black;
+  color: white;
+}
+
+.navigace>li:hover ul li:last-child {
+  border-radius: 0px 0px 15px 15px;
+}
+
+.navigace>li:hover ul li:hover {
+  background-color: #B5C6FE;
+  color: black;
+}
+
+ul.navigace ul ul {
+  display: none;
+}
+
+.navigace>li:hover ul li:hover ul {
+  display: block;
+}
